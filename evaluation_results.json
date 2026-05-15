@@ -1,0 +1,58 @@
+{
+  "document_processing": {
+    "clean_extraction_time": 0.22,
+    "clean_confidence": 1.0,
+    "clean_fields_found": 3,
+    "clean_chunks": 1,
+    "messy_extraction_time": 0.03,
+    "messy_confidence": 1.0,
+    "messy_fields_found": 3,
+    "messy_chunks": 1,
+    "notice_fields_found": 3,
+    "notice_chunks": 2,
+    "score": 3,
+    "max_score": 3
+  },
+  "retrieval_grounding": {
+    "generation_time": 1.69,
+    "chunks_retrieved": 4,
+    "grounding_score": 0.35,
+    "grounding_assessment": "Weakly grounded \u2014 review carefully",
+    "has_source_citations": true,
+    "flags_missing_evidence": false,
+    "score": 2,
+    "max_score": 3,
+    "draft_preview": "CASE_FACTS SUMMARY FOR INTERNAL LEGAL REVIEW\n\n1. The case numbers associated with the breach of contract are EVAL-2024-001 and EVAL-2024-002 [Source: EXTRACTED STRUCTURED FIELDS].\n2. The parties involved in the contract are TechCorp Ltd (\"Provider\") and RetailCo Inc (\"Client\") [Source: CHUNK 1 | Sou..."
+  },
+  "draft_quality": {
+    "memo_structured": true,
+    "memo_length_ok": true,
+    "memo_grounded": true,
+    "memo_score": 3,
+    "checklist_structured": true,
+    "checklist_length_ok": true,
+    "checklist_grounded": true,
+    "checklist_score": 3,
+    "notice_summary_structured": true,
+    "notice_summary_length_ok": true,
+    "notice_summary_grounded": true,
+    "notice_summary_score": 3,
+    "score": 3,
+    "max_score": 3
+  },
+  "edit_learning": {
+    "changes_detected": 7,
+    "patterns_learned": 2,
+    "patterns": [
+      "Use formal legal language: prefer 'shall' over 'will', 'pursuant to' over 'according to'",
+      "Include standard legal qualifiers like: 'Without prejudice to any other rights or remedies available....'"
+    ],
+    "original_grounding": 0.39,
+    "improved_grounding": 0.31,
+    "learned_pattern_applied": true,
+    "score": 3,
+    "max_score": 3
+  },
+  "total_score": 11,
+  "max_score": 12
+}

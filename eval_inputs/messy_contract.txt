@@ -1,0 +1,10 @@
+
+services  agreement!!!
+case no EVAL-2024-002
+between:  TechCorp  ltd  AND   RetailCo INC
+date: 1/1/2024
+monthly  fee:  USD10,000
+term:12 months   from jan 1 2024
+termination:   30days   written  notice
+confidentality:  both  parties keep info confidential
+ip: deliverables = client property after full paymt
