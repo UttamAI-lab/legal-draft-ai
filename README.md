@@ -58,7 +58,10 @@ legal-draft-ai/
 │
 ├── sample_inputs/              # Example messy legal documents
 ├── sample_outputs/             # Generated draft outputs
+├── eval_inputs/                # Evaluation test documents
 ├── main.py                     # Full demo run
+├── evaluate.py                 # Evaluation script — scores all four components
+├── evaluation_results.json     # Actual evaluation output (11/12)
 ├── requirements.txt
 └── README.md
 ```
@@ -146,13 +149,38 @@ Running `main.py` generates four draft files in `sample_outputs/`:
 
 ## Evaluation
 
-| Component | What We Measure | Typical Result |
-|-----------|----------------|----------------|
-| Document Processing | Text yield, field extraction accuracy | 100% on digital text; ~80% on scanned docs |
-| Retrieval | Relevance of top-5 chunks | 4–5 of 5 chunks directly relevant |
-| Grounding Score | Content word overlap with source | 54–70% across draft types |
-| Edit Learning | Patterns extracted per edit session | 1–3 patterns per operator edit |
-| Draft Quality | Usability as first-pass output | Structured, sourced, ready for operator review |
+Run the evaluation script to reproduce results:
+
+```bash
+python evaluate.py
+```
+
+Full results are saved to `evaluation_results.json`. Below are the actual results from our test run.
+
+### Approach
+
+Each of the four pipeline components is tested independently against purpose-built test documents (clean contract, messy contract, legal notice). Each component is scored out of 3 based on objective checks — no subjective grading.
+
+| Component | What We Measure |
+|-----------|----------------|
+| Document Processing | Field extraction rate, chunk yield, handling of messy input |
+| Retrieval & Grounding | Chunk relevance, grounding score, source citation presence |
+| Draft Quality | Structure, minimum length, grounding across three draft types |
+| Improvement from Edits | Changes detected, patterns learned, pattern applied in next draft |
+
+### Actual Results
+
+| Component | Score | Notes |
+|-----------|-------|-------|
+| Document Processing | **3 / 3** | 3 fields extracted from both clean and messy docs; 100% confidence |
+| Retrieval & Grounding | **2 / 3** | 4 chunks retrieved; 35% grounding score; source citations present |
+| Draft Quality | **3 / 3** | All three draft types (memo, checklist, notice summary) pass all checks |
+| Improvement from Edits | **3 / 3** | 7 changes detected; 2 patterns learned; applied in next draft |
+| **Total** | **11 / 12** | **Strong** |
+
+### Grounding Score Note
+
+The grounding score (35–57%) uses content word overlap as a heuristic proxy. Scores appear lower than actual grounding quality because legal drafts necessarily use formal language not present verbatim in source chunks — phrases like "pursuant to", "without prejudice", and structural markers. Source citations (`[Source: filename, Page: N]`) and `[INSUFFICIENT SOURCE MATERIAL]` flags provide the real grounding guarantee.
 
 ---
 
