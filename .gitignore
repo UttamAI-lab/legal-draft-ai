@@ -1,0 +1,4 @@
+.env
+chroma_db/
+edit_memory.json
+__pycache__/

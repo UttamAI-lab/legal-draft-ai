@@ -1,0 +1,18 @@
+
+Meeting Notes - client call 22/3
+---------------------------------
+talked to beta corp today -- they say they didnt get our invoice??
+check with accounts - was invoice sent for march? amount should be $15k
+
+they also mentioned something about code being shared -- need to 
+investigate. john said he saw our code on github under different name??
+
+next steps:
+- send formal notice (already done)
+- get evidence of github thing
+- check if we have grounds to terminate
+
+case number is PSL-2024-0892
+
+potential damages: 15000 USD unpaid + potential IP claim
+deadline for response from them: by April 5

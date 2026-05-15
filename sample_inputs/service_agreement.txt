@@ -1,0 +1,48 @@
+
+SERVICE AGREEMENT
+=================
+
+    Case No: PSL-2024-0892
+
+Between:
+ALPHA TECH SOLUTIONS LTD ("Service Provider")
+AND
+BETA CORP INC ("Client")
+
+Date: 15/03/2024
+
+RE: Software Development  & Maintenance Services
+
+1. SCOPE OF SERVICES
+
+The Service Provider shall provide software development services
+as described in Schedule A attached hereto.  
+
+The client will pay the Service Provider a monthly fee of USD 15,000
+for the duration of this Agreement.
+
+2.  TERM
+
+This Agreement shall commence on April 1, 2024 and shall continue
+for a period of 12 months unless terminated earlier.
+
+Termination: Either party may terminate with 30 days written notice.
+
+3. CONFIDENTIALITY
+
+Both parties agree to keep all information confidential.
+The client's data must not be shared with third parties.
+
+4. INTELLECTUAL PROPERTY
+
+All work product created under this agreement shall be the property
+of the Client upon full payment of all fees.
+
+5. LIABILITY
+
+The Service Provider's liability is limited to the total fees paid
+in the preceding 3 months.
+
+Signed:
+Alpha Tech Solutions Ltd: _________________
+Beta Corp Inc: _________________

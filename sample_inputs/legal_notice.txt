@@ -1,0 +1,36 @@
+
+LEGAL NOTICE
+------------
+Date: 22 March 2024
+
+To: Beta Corp Inc
+    123 Business Avenue
+    New York, NY 10001
+
+From:  Alpha Tech Solutions Ltd
+       456 Tech Street, San Francisco, CA 94102
+
+Subject: Notice of Breach of Contract - Case PSL-2024-0892
+
+Dear Sir/Madam,
+
+We write to formally notify you of your breach of the Service Agreement
+dated 15/03/2024 (Case No: PSL-2024-0892).
+
+Specific breaches identified:
+1. Non-payment of March 2024 invoice (Amount: USD 15,000) due 01/04/2024
+2. Unauthorized disclosure of proprietary source code to third party
+3. Failure to provide access to systems as required under Schedule A
+
+We hereby demand:
+- Immediate payment of USD 15,000 overdue invoice
+- Written explanation of the disclosure incident within 7 days
+- Full system access restored within 48 hours
+
+Failure to remedy these breaches within 14 days of this notice will result
+in legal proceedings without further notice.
+
+Yours faithfully,
+[Signature]
+Legal Department
+Alpha Tech Solutions Ltd
